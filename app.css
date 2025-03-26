@@ -5,3 +5,23 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-color: #f0f0f0;
 }
+
+.wrapper {
+  display: flex;
+  gap: 20px;
+  width: 300px;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  margin: auto;
+}
+
+.card {
+  scroll-snap-align: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 20px 30px;
+  flex-shrink: 0;
+  text-align: center;
+}
